@@ -1,0 +1,16 @@
+def check_status(a,b,flag):
+    if (a > 0 and b < 0 and flag is False) or (a and b < 0 and flag is True) or (a < 0 and b > 0 and flag is False):
+        return True
+    else:
+        return False
+
+try:
+    flag = bool(input("Please the flag: "))
+    a = int(input("Please enter the value of a: "))
+    b = int(input("Please enter the value of b: "))
+    result = check_status(a, b, flag)
+    print(f"The check status result is", {result})
+except ValueError:
+  print("Invalid input. Please enter an integer.")
+
+
