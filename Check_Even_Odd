@@ -1,0 +1,16 @@
+# Check a entered number by the user is Even Number or Odd Number
+
+def check_even_odd(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+# Get input from the user
+try:
+  num = int(input("Enter an integer: "))
+  # Call the function and print the result
+  result = check_even_odd(num)
+  print(f"The number {num} is {result}.")
+except ValueError:
+  print("Invalid input. Please enter an integer.")
